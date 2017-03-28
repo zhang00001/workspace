@@ -1,0 +1,68 @@
+.top{
+	width:100%;
+	height:190px;
+	background-color:#342323;
+}
+.top .logo{
+	float:left;
+	width:281px;
+	height:110px;
+	margin-top:40px;
+	margin-left:20px;
+}
+.top .tel{
+	float:right;
+	margin-right:20px;
+	margin-top:65px;
+}
+.weixin{
+	float:right;
+	margin-right:20px;
+	margin-top:34px;
+	width:99px;
+}
+/*导航开始*/
+#content { 
+	width:100%;
+	background-color:#ea5505;
+}
+#content #nav { 
+	height:38px;
+	background-color: #ea5505; 
+	width:1200px;
+	margin:0 auto;
+}
+#content #nav ul li { 
+	float: left; 
+	width:138px; 
+	line-height:38px; 
+	position: relative;
+	text-align: center;
+}
+#nav div { 
+	width:138px; 
+	position: absolute; 
+	left: 0px; 
+	padding-bottom: 0px; 
+	float: left; 
+	height: 0; 
+	overflow: hidden; 
+	background-color: #ea5505; 
+}
+#content #nav li .a { 
+	color: #fff; 
+	line-height:38px; 
+	display: block;
+	font-size:16px;
+}
+#content #nav li .a:hover{ 
+	background-color:#e34000;
+}
+#nav div a {  
+	color: #fff; 
+	line-height:32px; 
+	display: block; 
+}
+#nav div a:hover { 
+	background-color:#e34000; 
+}

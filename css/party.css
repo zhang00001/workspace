@@ -57,6 +57,66 @@
         font-size: 11px;
     }
     
+    .panel-default>.panel-heading {
+        background: #9c1e2e;
+        color: #fff;
+        border-radius: 17px;
+    }
+    
+    .panel-body ul li {
+        margin: 10px 0;
+    }
+    
+    .panel-body ul li a {
+        color: rgb(198, 175, 175);
+        text-decoration: none;
+    }
+    
+    .panel-body ul li a:hover {
+        color: rgb(157, 200, 25);
+    }
+    
+    .panel-default {
+        border: none;
+    }
+    
+    .pro_text {
+        border-bottom: 1px solid #aeaeae;
+        padding-bottom: 16px;
+        position: relative;
+    }
+    
+    .pro_text h2 {
+        color: #888888;
+        font-size: 16px;
+        margin: 11px 0px;
+    }
+    
+    .pro_text h1 {
+        font-size: 20px;
+        color: #3e001f;
+    }
+    
+    .pro_text a {
+        color: #3e001f;
+        font-weight: bold;
+    }
+    
+    .pro_text .pos {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .pro_text .pos .rec {
+        background: url(/assets/product-set02-7911e6d209a9ced7052995ef7c9d99dc.png) no-repeat;
+        padding: 0;
+        text-align: center;
+        text-indent: -9999px;
+        background-size: auto 100%;
+        width: 100%;
+    }
+    
     @media (max-width: 789px) {
         .navbar-toggle {
             float: left;
