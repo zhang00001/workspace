@@ -1,0 +1,12 @@
+{
+    "angulardoc.repoId": "9269b075-9dc7-4034-8498-f3e4befd3361",
+    "angulardoc.directoryFilter": [
+        "!typings",
+        "!node_modules",
+        "!.vscode"
+    ],
+    "angulardoc.fileFilter": [
+        "**/!(*.*spec).ts"
+    ],
+    "angulardoc.lastSync": 0
+}

@@ -1,0 +1,115 @@
+    .navbar {
+        background: url(images/bg1.png);
+        background-size: cover;
+    }
+    
+    .navbar-brand>img {
+        margin-top: -4px;
+    }
+    
+    .navbar-default {
+        border-color: transparent;
+    }
+    
+    .navbar-header .navbar-brand img {
+        max-height: 26px;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+    }
+    
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #fff;
+    }
+    
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:focus,
+    .navbar-default .navbar-nav>.open>a:hover {
+        color: #fff;
+    }
+    
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:focus,
+    .navbar-default .navbar-nav>.open>a:hover {
+        background: transparent;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #fff!important;
+    }
+    
+    .carousel-indicators li {
+        background: #9dc819 none repeat scroll 0 0;
+    }
+    
+    .carousel-indicators .active {
+        background: #000;
+    }
+    
+    .product-category-link {
+        color: #838383;
+        font-size: 12px;
+    }
+    
+    .info {
+        font-size: 11px;
+    }
+    
+    @media (max-width: 789px) {
+        .navbar-toggle {
+            float: left;
+        }
+        .carousel {
+            top: 60px;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+        a {
+            color: #fff;
+        }
+        a:focus,
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: transparent
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: #fff;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+            color: #fff;
+        }
+        .containers {
+            margin-top: 75px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .navbar-right {
+            float: right !important;
+            margin-right: -15px;
+        }
+        .container {
+            width: 826px;
+        }
+        .navbar-nav {
+            float: left;
+            margin: 0;
+        }
+        #carousel-id {
+            margin-top: 10px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }

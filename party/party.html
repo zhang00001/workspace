@@ -3,62 +3,383 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>蛋糕房</title>
-    <link rel="stylesheet" href="party.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <!--引入雅虎的样式重置-->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="party.css">
+    <title>Document</title>
 </head>
 
 <body>
+    <!--pc导航-->
 
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-            <a class="navbar-brand" href="#">Title</a>
-        </div>
+    <nav class="navbar navbar-default hidden-xs navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="hidden-sm" style="display: inline">当前城市：</span>北京 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">上海</a> </li>
+                            <li><a href="#">杭州</a></li>
+                            <li><a href="#">天津</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品列表 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">圣诞精选</a></li>
+                            <li><a href="#">迪士尼系类</a></li>
+                            <li><a href="#">礼盒</a></li>
+                            <li><a href="#">蛋糕</a></li>
+                            <li><a href="#">纸杯蛋糕</a></li>
+                            <li><a href="#">派</a></li>
+                            <li><a href="#">挞</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">寻找我们 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">门店</a></li>
+                            <li><a href="#">配送须知</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">活动</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">会员</a></li>
+                            <li><a href="#">我们</a></li>
+                            <li><a href="#">礼品卡</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li>
+                        <a href="#"> <i class="fa fa-shopping-cart"></i><span class="hidden-sm" style="display: inline"> 购物车</span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.navbar-collapse -->
+        <!-- /.container -->
     </nav>
 
 
+    <!--移动端导航-->
+
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
+        <div class="container" style="background: url(images/bg1.png) repeat-y;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" href="#">未登录</a>
+                    </div>
+                    <div class="col-xs-6" style="padding-left: 0;">
+                        <a href=""><img src="images/logo.png" alt="" style="vertical-align: middle;
+    max-height: 26px;
+    margin-top: 12px;"></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <i class="fa fa-2x fa-phone" aria-hidden="true" style="color:#fff;line-height: 50px;"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">当前城市：北京 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">上海</a> </li>
+                            <li><a href="#">杭州</a></li>
+                            <li><a href="#">天津</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品列表 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">圣诞精选</a></li>
+                            <li><a href="#">迪士尼系类</a></li>
+                            <li><a href="#">礼盒</a></li>
+                            <li><a href="#">蛋糕</a></li>
+                            <li><a href="#">纸杯蛋糕</a></li>
+                            <li><a href="#">派</a></li>
+                            <li><a href="#">挞</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">寻找我们 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">门店</a></li>
+                            <li><a href="#">配送须知</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">活动</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">会员</a></li>
+                            <li><a href="#">我们</a></li>
+                            <li><a href="#">礼品卡</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li>
+                        <a href="#"> <i class="fa fa-shopping-cart"></i> 购物车</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="row text-center" style="background: #fff;padding: 10px;">
+                <div class="col-xs-3">
+                    <div class="col-xs-12">
+                        <i class="fa fa-home">  </i>
+                    </div>
+                    <div class="col-xs-12"> 首页</div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="col-xs-12">
+                        <i class="fa fa-list">  </i>
+                    </div>
+                    <div class="col-xs-12"> 产品列表</div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="col-xs-12">
+                        <i class="fa fa-user">  </i>
+                    </div>
+                    <div class="col-xs-12"> 个人中心</div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="col-xs-12">
+                        <i class="fa fa-shopping-cart">  </i>
+                    </div>
+                    <div class="col-xs-12"> 购物车</div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--轮播图-->
+
+    <div id="carousel-id" class="carousel slide" data-ride="carousel" style="margin-top: 50px">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="3" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="4" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="5" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="6" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="7" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car1.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-1.jpg">
+
+            </div>
+            <div class="item">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="images/car2.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-2.jpg">
+
+            </div>
+            <div class="item active">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="images/car3.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-3.jpg">
+
+            </div>
+            <div class="item ">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="four slide" src="images/car4.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-4.jpg">
+
+            </div>
+            <div class="item ">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="five slide" src="images/car5.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-5.jpg">
+
+            </div>
+            <div class="item ">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="six slide" src="images/car6.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-6.jpg">
+
+            </div>
+            <div class="item ">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="sever" src="images/car7.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-7.jpg">
+
+            </div>
+            <div class="item ">
+                <img class="hidden-xs" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="eight" src="images/car8.jpg">
+                <img class="visible-xs" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/car-8.jpg">
+
+            </div>
+        </div>
+
+    </div>
+    <!--产品介绍-->
+    <div class="container-fluid containers ">
+        <div class="col-md-offset-1 col-sm-offset-1">
+            <!--产品列表-->
+
+            <div class="row ">
+                <div class="list" style="padding: 15px;color:#4a8937">
+                    <i class="fa fa-caret-right">  </i> 产品列表
+                </div>
+            </div>
+
+
+            <div class="row text-center product">
+
+                <div class="col-sm-2 col-md-2 col-xs-6">
+                    <img src="images/list1.jpg" alt="" class="img-responsive product-img">
+                    <a href="" class="product-category-link">Disney / 迪士尼系列</a>
+                    <div class="prodct-img-car"> </div>
+                </div>
+                <div class="col-sm-2 col-md-2 col-xs-6">
+                    <img src="images/list2.jpg" alt="" class="img-responsive">
+                    <a href="" class="product-category-link">Cakes / 蛋糕</a>
+                </div>
+                <div class="col-sm-2 col-md-2 col-xs-6">
+                    <img src="images/list3.jpg" alt="" class="img-responsive">
+                    <a href="" class="product-category-link">Cupcakes / 纸杯蛋糕</a>
+                </div>
+                <div class="col-sm-2 col-md-2 col-xs-6">
+                    <img src="images/list4.jpg" alt="" class="img-responsive">
+                    <a href="" class="product-category-link">Christmas Specials / 圣诞精选</a>
+                </div>
+                <div class="col-sm-2 col-md-2 hidden-xs">
+                    <img src="images/list5.jpg" alt="" class="img-responsive">
+                    <a href="" class="product-category-link">Pies / 派</a>
+                </div>
+            </div>
+
+
+            <!--新品推荐-->
+            <div class="row">
+                <div class="list" style="padding: 15px;color:#4a8937">
+                    <i class="fa fa-caret-right">  </i> 新品推荐
+                </div>
+            </div>
+
+            <div class="row text-center product ">
+                <div class="col-md-10 col-sm-10 ">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 col-xs-6">
+                            <img src="images/li-2-1.jpg" alt="" class="img-responsive">
+                            <a href="" class="product-category-link">小熊维尼蛋糕 6吋 ￥299</a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-6">
+                            <img src="images/li-2-2.jpg" alt="" class="img-responsive">
+                            <a href="" class="product-category-link">惊叹雪人蛋糕 6吋 ￥399</a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-6">
+                            <img src="images/li-2-3.jpg" alt="" class="img-responsive">
+                            <a href="" class="product-category-link">草莓空气感蛋糕 6吋 ￥219</a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-6">
+                            <img src="images/li-2-4.jpg" alt="" class="img-responsive">
+                            <a href="" class="product-category-link">草莓纸杯蛋糕 中号 ￥25</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 hidden-xs" style="margin-top:50px;">
+
+                    <table style="margin: 0 auto;">
+                        <tr>
+                            <td class="first">
+                                <img src="images/foot1.png" alt="" style="width: 160px;">
+                                <div class="info">
+                                    订购邮箱<br>order@partysbest.com<br>北京朝阳区神路街39号10栋3层4段92-93
+                                </div>
+                            </td>
+                            <td class="second">
+                                <div class="info">
+                                    官方微博 | 官方微信
+                                </div>
+                                <div class="info">
+                                    <a href="" class="">
+                                        <i class="fa fa-weibo fa-2x">  </i>
+                                    </a>
+                                    <img src="images/foot2.jpg" alt="" style="width: 70px;">
+                                </div>
+                            </td>
+                            <td class="three">
+                                <img src="images/foot3.png" alt="" class="" style="height: 40px;">
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="icp text-center" style="margin-top:10px;">
+
+            Copyright 2010-2017 派悦坊，Ltd 京ICP备12046340
+        </div>
+        <img src="images/foot4.png" alt="" class="img-responsive">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="party.js"></script>
 
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

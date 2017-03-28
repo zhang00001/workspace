@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zhang00001/workspace/issues"
   },
-  "homepage": "https://github.com/zhang00001/workspace#readme"
+  "homepage": "https://github.com/zhang00001/workspace#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.7.0"
+  }
 }
