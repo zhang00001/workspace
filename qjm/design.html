@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>武汉齐家美装饰工程有限公司</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/golbal.css">
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// 案例展示
+				$(".mask").hide();
+			 	$(".mask-pic").hover(function(){
+			  	$(this).children(".mask").slideToggle(500);
+			 	});
+
+			 	// 风格装修
+			 	$(".mask2").hide();
+			 	$(".mask-pic2").hover(function(){
+			  	$(this).children(".mask2").fadeToggle(500);
+			 	});
+
+			 	// 切换风格
+			 	 var $tab_li = $('.feng_menu li');
+                $tab_li.hover(function() {
+                    $(this).addClass('selected').siblings().removeClass('selected');
+                    var index = $tab_li.index(this);
+                    $('.box').eq(index).show().siblings().hide();
+                });
+
+                // 公司团队
+
+                $(".mask3").hide();
+			 	$(".mask-pic3").hover(function(){
+			  	$(this).children(".mask3").slideToggle(500);
+			 	});
+                            });
+		</script>
+		
+    </head>
+    <body>
+        <!-- 顶部开始 -->
+		<div class="top">
+			<div class="sub-con">
+				<div class="logo"><a href="index.html"><img src="images/logo.jpg" alt=""></a></div>
+				<div class="weixin"><a href="#"><img src="images/weixin.jpg" alt=""></a></div>
+				<div class="tel"><a href="#"><img src="images/tel.jpg" alt=""></a></div>
+			</div>
+		</div>
+        <!-- 导航开始 -->
+        <div id="content">
+            <div id="nav">
+                <ul id="supnav">
+                    <li><a href="index.html" class="a">首页</a></li>
+                    <li><a href="about.html" class="a">关于齐家美</a></li>
+                    <li><a href="operations.html" class="a">运营结构</a></li>
+                    <li><a href="matarial.html" class="a">主材展厅</a></li>
+                    <li><a href="case.html" class="a">案例展示</a></li>
+                    <li><a href="design.html" class="a">设计团队</a></li>
+                    <li><a href="change.html" class="a">交流平台</a></li>
+                    <li><a href="service.html" class="a">售后服务</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--内容开始-->
+        <div class="content">
+            <div class="sub-con sub2">
+                <div class="search">
+                    <form action="" method="post" id="sear-box">
+                        <input type="text" class="sear-txt" value="现代简约"/><input type="submit" class="sear-ti" value="齐家美搜索"/>
+                    </form>
+                </div>
+                <div class="she">
+                    <div class="title10"><a href="#"></a></div>
+                    <div class="she-txt">
+                        <div class="sl left">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>
+                        </div>
+                        <div class="sr right">
+                            <div class="title11">案例欣赏</div>
+                            <a href="#"><img src="images/s_img2.jpg" alt="" width="310" height="192" style="margin-right: 15px;margin-bottom: 40px;"/></a>
+                            <a href="#"><img src="images/s_img3.jpg" alt=""style="margin-bottom: 40px;"/></a>
+                            <a href="#"><img src="images/s_img4.jpg" alt=""width="310" height="192" style="margin-right: 15px;"/></a>
+                            <a href="#"><img src="images/s_img5.jpg" alt=""/></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="she-txt">
+                        <div class="sr left">
+                            <div class="title11">案例欣赏</div>
+                            <a href="#"><img src="images/s_img2.jpg" alt="" width="310" height="192" style="margin-right: 15px;margin-bottom: 40px;"/></a>
+                            <a href="#"><img src="images/s_img3.jpg" alt=""style="margin-bottom: 40px;"/></a>
+                            <a href="#"><img src="images/s_img4.jpg" alt=""width="310" height="192" style="margin-right: 15px;"/></a>
+                            <a href="#"><img src="images/s_img5.jpg" alt=""/></a>
+                        </div>
+                        <div class="sl right">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="de-list">
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>   
+                        </div>
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>   
+                        </div>
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>   
+                        </div>
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>    
+                        </div>
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>    
+                        </div>
+                        <div class="deshe-txt">
+                            <a href="design-detail.html"><img src="images/s_img1.png" alt=""/></a>
+                            <a href="design-detail.html"><span class="s-name1">李庆玲</span></a>
+                            <h4>首席设计师</h4>
+                            <p><span class="s1">设计理念:</span> 以人为本，是设计的灵魂所在；为客户做最适合他的居室设计，是设计师的灵魂所在。</p>
+                            <span class="s-shen"><a href="design-detail.html">详细介绍</a></span>    
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="pages"> 
+                        <a href="#"><上一页</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <span>...</span>
+                        <a href="#">8</a>
+                        <a href="#">下一页></a>
+                    </div>
+                </div>
+                <div class="link">
+                        <div class="sub-con2 ">
+                            <img src="images/t_img14.png" alt="">
+                            <p><span>友情链接：</span>
+                            <ul>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- footer开始 -->
+        <div class="footer">
+            <div class="sub-con">
+                <ul>
+                    <li><a href="index.html"> 首页  </a>|</li>
+                    <li><a href="about.html">关于齐家美</a>|</li>
+                    <li><a href="operations.html">运营结构</a>|</li>
+                    <li><a href="material.html">主材展厅</a>|</li>
+                    <li><a href="change.html">交流平台</a>|</li>
+                    <li><a href="design.html">设计团队</a>|</li>
+                    <li><a href="case.html">案例展示</a>|</li>
+                    <li><a href="service.html">售后服务</a>|</li>
+                </ul>
+                <div class="clear"></div>
+                <p>Copyright @ 1997-2014  武汉齐家美装饰工程有限公司  技术支持：<a href="http://www.twoarmy.com/">双军技术</a></p>
+                <p>公司地址：中国武汉光谷国际企业中心一期聚贤楼A座2F</p>	
+            </div>
+        </div>
+        <!-- 客服开始 -->
+        <div class="kefu-box">
+            <div class="kefu-con">
+                <ul>
+                    <li><a href="#">客服咨询</a></li>
+                    <li><a href="#">售后咨询</a></li>
+                    <li><a href="#">技术咨询</a></li>
+                    <li><a href="#">加盟咨询</a></li>
+                </ul>
+                <div class="weixin2">
+                    <img src="images/weixin2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--返回顶部-->
+        <div class="backtop"></div>
+        <script type="text/javascript">
+		$(document).ready(function(){
+		//首先将#back-to-top隐藏
+		 $(".backtop").hide();
+		//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+		$(function () {
+		$(window).scroll(function(){
+		if ($(window).scrollTop()>100){
+		$(".backtop").fadeIn(1500);
+		}
+		else
+		{
+		$(".backtop").fadeOut(1500);
+		}
+		});
+		//当点击跳转链接后，回到页面顶部位置
+		$(".backtop").click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		return false;
+		});
+		});
+		});
+		</script> 
+    </body>
+</html>

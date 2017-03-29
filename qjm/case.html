@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>武汉齐家美装饰工程有限公司</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/golbal.css">
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// 案例展示
+				$(".mask").hide();
+			 	$(".mask-pic").hover(function(){
+			  	$(this).children(".mask").slideToggle(500);
+			 	});
+
+			 	// 风格装修
+			 	$(".mask2").hide();
+			 	$(".mask-pic2").hover(function(){
+			  	$(this).children(".mask2").fadeToggle(500);
+			 	});
+
+			 	// 切换风格
+			 	 var $tab_li = $('.feng_menu li');
+                $tab_li.hover(function() {
+                    $(this).addClass('selected').siblings().removeClass('selected');
+                    var index = $tab_li.index(this);
+                    $('.box').eq(index).show().siblings().hide();
+                });
+
+                // 公司团队
+
+                $(".mask3").hide();
+			 	$(".mask-pic3").hover(function(){
+			  	$(this).children(".mask3").slideToggle(500);
+			 	});
+                            // 瀑布流
+                            var $container = $('#masonry');
+                                    $container.imagesLoaded( function(){
+                                            $container.masonry({
+                                                    itemSelector : '.listb-box',
+                                                    gutterWidth : 0,
+                                                    isAnimated: true,
+                                            });
+                                    });
+
+			});
+		</script>
+		
+    </head>
+    <body>
+        <!-- 顶部开始 -->
+		<div class="top">
+			<div class="sub-con">
+				<div class="logo"><a href="index.html"><img src="images/logo.jpg" alt=""></a></div>
+				<div class="weixin"><a href="#"><img src="images/weixin.jpg" alt=""></a></div>
+				<div class="tel"><a href="#"><img src="images/tel.jpg" alt=""></a></div>
+			</div>
+		</div>
+        <!-- 导航开始 -->
+        <div id="content">
+            <div id="nav">
+                <ul id="supnav">
+                    <li><a href="index.html" class="a">首页</a></li>
+                    <li><a href="about.html" class="a">关于齐家美</a></li>
+                    <li><a href="operations.html" class="a">运营结构</a></li>
+                    <li><a href="matarial.html" class="a">主材展厅</a></li>
+                    <li><a href="case.html" class="a">案例展示</a></li>
+                    <li><a href="design.html" class="a">设计团队</a></li>
+                    <li><a href="change.html" class="a">交流平台</a></li>
+                    <li><a href="service.html" class="a">售后服务</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--内容开始-->
+        <div class="content">
+            <div class="sub-con sub2">
+                <div class="search">
+                    <form action="" method="" id="sear-box">
+                        <input type="text" class="sear-txt" value="现代简约"/><input type="submit" class="sear-ti" value="齐家美搜索"/>
+                    </form>
+                </div>
+                <div class="title8"><a href="#"></a></div>
+                <div class="feng-list">
+                    <ul>
+                        <li>中式风格</li>
+                        <li>现代简约</li>
+                        <li>欧式风格</li>
+                        <li>美式风格</li>
+                        <li>东南亚</li>
+                        <li>田园风格</li>
+                        <li>地中海</li>
+                        <li>创意风格</li>
+                        <li>混搭</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="list-sub-box">
+                    <ul class="listb-list">
+                        <li class="selected1">全部</li>
+                        <li>最新</li>
+                        <li>最热</li>
+                    </ul>
+                    <div class="clear"></div>
+                    <div>
+                    <div id="masonry" class="container-fluid">
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="masonry" class="container-fluid" style="display: none;">
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="masonry" class="container-fluid" style="display: none;">
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img1.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img2.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img3.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="listb-box">
+                                <a href="case-detail.html"><img src="images/c_img4.jpg" alt=""></a>
+                                <p><a href="#" class="w1">清爽之家</a></p>
+                                <p><a href="#" class="w2">地中海 </a>- [ 2014-11-11 ]</p>
+                                <p class="rt"><a href="design-detail.html" class="w2">主席设计师-张国强</a></p>
+                                <div class="clear"></div>
+                            </div>
+                        <div class="clear"></div>
+                    </div>
+                    </div>
+                    <script type='text/javascript'>
+                        $(document).ready(function() {
+                            var $tab_li = $('.listb-list li');
+                            $tab_li.click(function() {
+                                $(this).addClass('selected1').siblings().removeClass('selected1');
+                                var index = $tab_li.index(this);
+                                $('.container-fluid').eq(index).show().siblings().hide();
+                            });
+                        });
+                    </script>
+                    <div class="pages"> 
+                        <a href="#"><上一页</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <span>...</span>
+                        <a href="#">8</a>
+                        <a href="#">下一页></a>
+                    </div>
+                    <div class="mess-box">
+                        <form action="" method="" id="mess" class="reg">
+                            <div class="lf">
+                                <div><label>房屋户型</label><input type="text" value="例如2室2厅" datatype="s6-18" ajaxurl="demo/valid.php" nullmsg="请填写户型！"errormsg="请正确填写！"/><span class="Validform_checktip"></span></div>
+                                <div><label>房屋面积</label><input type="text" value="89㎡" datatype="/^[1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9]|10000$/" nullmsg="请填写面积！" errormsg="必须是在10-10000之间！"/><span class="Validform_checktip"></span></div>
+                                <div><label>装修类型</label><input type="text" value="地中海" datatype="^[\u4e00-\u9fa5]{0,}$" nullmsg="请填写类型！" errormsg="必须是数字！"/ ><span class="Validform_checktip"></span></div>
+                                <div><label>地理位置</label><input type="text" value="武汉市洪山区" datatype="^[\u4e00-\u9fa5]{0,}$" nullmsg="请填写位置！" errormsg="必须是数字！"/><span class="Validform_checktip"></span></div>
+                                <div><label>您的姓名</label><input type="text" value="张三" datatype="/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/" nullmsg="请填写姓名！" errormsg="必须是中文！"/><span class="Validform_checktip"></span></div>
+                                <div><label>联系电话</label><input type="text" value="13712345678" datatype="^[1]+[3,5,8]+\d{9}" nullmsg="请填写手机号！" errormsg="必须是11位数字！"/><span class="Validform_checktip"></span></div>
+                            </div>
+                            <div class="rf">
+                                <label>留言板：</label><br/>
+                                <textarea class="" cols="46" rows="8"></textarea>
+                                <input type="submit" value="重 置" class="chong submit"><input type="submit" value="提 交" class="ti submit">
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <div class="link">
+                        <div class="sub-con2 ">
+                            <img src="images/t_img14.png" alt="">
+                            <p><span>友情链接：</span>
+                            <ul>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                                <li><a href="#">武汉双军技术信息有限公司</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer开始 -->
+        <div class="footer">
+            <div class="sub-con">
+                <ul>
+                    <li><a href="index.html"> 首页  </a>|</li>
+                    <li><a href="about.html">关于齐家美</a>|</li>
+                    <li><a href="operations.html">运营结构</a>|</li>
+                    <li><a href="material.html">主材展厅</a>|</li>
+                    <li><a href="change.html">交流平台</a>|</li>
+                    <li><a href="design.html">设计团队</a>|</li>
+                    <li><a href="case.html">案例展示</a>|</li>
+                    <li><a href="service.html">售后服务</a>|</li>
+                </ul>
+                <div class="clear"></div>
+                <p>Copyright @ 1997-2014  武汉齐家美装饰工程有限公司  技术支持：<a href="http://www.twoarmy.com/">双军技术</a></p>
+                <p>公司地址：中国武汉光谷国际企业中心一期聚贤楼A座2F</p>	
+            </div>
+        </div>
+        <!-- 客服开始 -->
+        <div class="kefu-box">
+            <div class="kefu-con">
+                <ul>
+                    <li><a href="#">客服咨询</a></li>
+                    <li><a href="#">售后咨询</a></li>
+                    <li><a href="#">技术咨询</a></li>
+                    <li><a href="#">加盟咨询</a></li>
+                </ul>
+                <div class="weixin2">
+                    <img src="images/weixin2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--返回顶部-->
+        <div class="backtop"></div>
+        <script type="text/javascript">
+		$(document).ready(function(){
+		//首先将#back-to-top隐藏
+		 $(".backtop").hide();
+		//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+		$(function () {
+		$(window).scroll(function(){
+		if ($(window).scrollTop()>100){
+		$(".backtop").fadeIn(1500);
+		}
+		else
+		{
+		$(".backtop").fadeOut(1500);
+		}
+		});
+		//当点击跳转链接后，回到页面顶部位置
+		$(".backtop").click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		return false;
+		});
+		});
+		});
+		</script> 
+    </body>
+</html>
